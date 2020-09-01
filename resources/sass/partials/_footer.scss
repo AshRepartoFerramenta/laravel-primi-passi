@@ -1,0 +1,36 @@
+footer {
+  background-color: $main_color;
+  color: #FFF;
+  padding: 60px 0;
+
+  .my_wrapper {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    @include centered;
+  }
+
+  .my_logo-wrapper {
+    width: 200px;
+  }
+}
+
+.my_useful-links {
+  text-align: right;
+  padding-top: 20px;
+
+  ul {
+    list-style: none;
+
+    & > li {
+      line-height: 1.5;
+    }
+  }
+  & a.my_link {
+    color: #FFF;
+    &:hover {
+      color: #FFF;
+      text-decoration: none;
+    }
+  }
+}

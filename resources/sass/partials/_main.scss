@@ -1,0 +1,66 @@
+.my_jumbotron {
+  width: 100%;
+  padding: 50px 0;
+}
+
+.my_jumbo-wrapper {
+  display: flex;
+  flex-flow: row nowrap;
+  @include centered;
+
+  h2 {
+    font-size: 3.9em;
+    padding-bottom: 50px;
+    font-weight: 300;
+    text-transform: uppercase;
+  }
+
+  h3 {
+    font-size: 1.5em;
+    padding-bottom: 30px;
+    font-weight: 500;
+  }
+
+  ul {
+    padding-left: 14px;
+    font-size: 1.1em;
+    & > li {
+      line-height: 26px;
+      font-weight: 300;
+    }
+  }
+}
+
+.my_jumbo-text,
+.my_jumbo-image {
+  width: calc(100% / 2);
+}
+
+.my_jumbo-image {
+    padding-top: 78px;
+}
+
+.my_image-wrapper {
+  width: 500px;
+}
+
+.my_policy_main {
+  & .my_wrapper {
+    @include centered;
+  }
+
+  h3 {
+    font-size: 1.8em;
+    font-weight: 500;
+    padding-bottom: 30px;
+  }
+
+  h4 {
+    font-weight: 500;
+    padding-bottom: 30px;
+  }
+
+  p {
+    padding-bottom: 30px;
+  }
+}

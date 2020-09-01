@@ -1,0 +1,46 @@
+header {
+  display: flex;
+  flex-direction: row;
+  padding: 15px 30px;
+  font-size: 0.9em;
+
+  .my_logo-section {
+    width: 40%;
+  }
+
+  .my_logo-wrapper {
+    width: 200px;
+  }
+
+  .my_nav-section {
+    width: 60%;
+
+    .my_candidati {
+      @include btn;
+      background-color: $secondary_color;
+    }
+  }
+
+  .my_navbar  {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    text-transform: uppercase;
+    line-height: 40px;
+    padding: 10px 0;
+    list-style: none;
+
+    span {
+      display: block;
+      border: 2px solid #FFF;
+
+      &:hover {
+        border-bottom-color: #61ce4e;
+      }
+    }
+
+
+  }
+
+
+}
